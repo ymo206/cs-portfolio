@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yusuf Mohamoud's computer science portfolio featuring projects, skills, experience, and education at the University of Washington Tacoma.">
+  <meta name="theme-color" content="#0a1324">
+  <title>Yusuf Mohamoud | Computer Science Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Yusuf Mohamoud, home">
+        YM<span>.</span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">COMPUTER SCIENCE STUDENT · UW TACOMA</p>
+
+        <h1 id="hero-title">
+          Hi, I'm <span>Yusuf Mohamoud.</span>
+        </h1>
+
+        <p class="hero-lead">
+          I build practical software and turn ideas into projects
+          that solve everyday problems.
+        </p>
+
+        <p class="hero-detail">
+          I'm a senior pursuing a BA in Computer Science at the
+          University of Washington Tacoma, with interests in
+          software engineering and web development.
+        </p>
+
+        <div class="action-row">
+          <a class="btn primary" href="#projects">
+            Explore my projects <span aria-hidden="true">↗</span>
+          </a>
+          <a class="btn secondary" href="#contact">
+            Get in touch
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="code-window">
+          <div class="window-top">
+            <i></i><i></i><i></i>
+            <span>portfolio.js</span>
+          </div>
+
+          <div class="window-body">
+            <p><span class="syntax-purple">const</span> developer = {</p>
+            <p class="indent">name: <span class="syntax-green">"Yusuf Mohamoud"</span>,</p>
+            <p class="indent">school: <span class="syntax-green">"UW Tacoma"</span>,</p>
+            <p class="indent">focus: <span class="syntax-green">"Software Engineering"</span>,</p>
+            <p class="indent">likesBuilding: <span class="syntax-blue">true</span></p>
+            <p>};</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section alternate" id="about">
+      <div class="container section-grid">
+        <div>
+          <p class="eyebrow">01 / ABOUT ME</p>
+          <h2>A little about me.</h2>
+        </div>
+
+        <div class="section-copy">
+          <p>
+            I'm a senior studying Computer Science at the University
+            of Washington Tacoma. I enjoy building software that has
+            a clear purpose, whether that's keeping track of internships
+            or organizing everyday tasks.
+          </p>
+
+          <p>
+            Through my coursework and personal projects, I've gained
+            experience with Java, Python, JavaScript, and the full
+            process of taking an idea from code to a working website.
+            My goal is to keep improving as a developer and work
+            toward a career in software engineering.
+          </p>
+
+          <p>
+            Outside programming, I enjoy staying active and learning
+            new skills. I bring the same consistency and attention to
+            detail to my schoolwork and projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow">02 / PROJECTS</p>
+        <h2>Things I've built.</h2>
+
+        <p class="section-intro">
+          Three projects that show my progress in web development,
+          debugging, and building tools for real users.
+        </p>
+
+        <div class="project-grid">
+
+          <!-- PROJECT 1 -->
+          <article class="project-card">
+            <div class="project-visual visual-portfolio">
+              <span class="visual-label">01 / WEB PORTFOLIO</span>
+
+              <div class="mini-browser">
+                <span class="mini-bar"></span>
+                <strong>Hi, I'm Yusuf.</strong>
+                <span class="mini-line wide"></span>
+                <span class="mini-line"></span>
+                <span class="mini-pill"></span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="card-top">
+                <h3>Personal Portfolio Website</h3>
+                <span class="project-kind">Web Development</span>
+              </div>
+
+              <p>
+                A responsive portfolio for showcasing my coursework,
+                technical skills, and projects. It gave me a central
+                place to document my progress in TCSS 490.
+              </p>
+
+              <p class="learning">
+                <strong>Challenge & learning:</strong>
+                I worked on organizing the site, improving its layout
+                across screen sizes, and publishing changes through
+                GitHub Pages.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>GitHub Pages</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://ymo206.github.io/tcss490-portfolio/"
+                  target="_blank" rel="noopener noreferrer">
+                  Live demo ↗
+                </a>
+                <a href="https://github.com/ymo206/tcss490-portfolio"
+                  target="_blank" rel="noopener noreferrer">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+            <div class="project-visual visual-todo">
+              <span class="visual-label">02 / TASK MANAGER</span>
+
+              <div class="mock-list">
+                <strong>Today's tasks</strong>
+                <div>
+                  <span class="mock-check checked">✓</span>
+                  <span class="mini-line wide"></span>
+                </div>
+                <div>
+                  <span class="mock-check"></span>
+                  <span class="mini-line"></span>
+                </div>
+                <div>
+                  <span class="mock-check"></span>
+                  <span class="mini-line wide"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="card-top">
+                <h3>To-Do List Application</h3>
+                <span class="project-kind">Interactive App</span>
+              </div>
+
+              <p>
+                A browser-based task manager that lets users add,
+                complete, and remove tasks, with task data saved locally.
+              </p>
+
+              <p class="learning">
+                <strong>Challenge & learning:</strong>
+                Fixing GitHub App permissions and pull-request workflow
+                issues helped me better understand repository access,
+                version control, and deployment.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>localStorage</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://ymo206.github.io/todo-list/"
+                  target="_blank" rel="noopener noreferrer">
+                  Live demo ↗
+                </a>
+                <a href="https://github.com/ymo206/todo-list"
+                  target="_blank" rel="noopener noreferrer">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+            <div class="project-visual visual-tracker">
+              <span class="visual-label">03 / CAREER DASHBOARD</span>
+
+              <div class="mock-dashboard">
+                <strong>Internship Tracker</strong>
+                <div class="mock-stats">
+                  <span>12<small>Total</small></span>
+                  <span>4<small>Interviewing</small></span>
+                  <span>2<small>Offers</small></span>
+                </div>
+                <div class="mini-line wide"></div>
+                <div class="mini-line"></div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="card-top">
+                <h3>Internship Application Tracker</h3>
+                <span class="project-kind">Productivity Tool</span>
+              </div>
+
+              <p>
+                A dashboard for organizing internship applications,
+                updating statuses, searching opportunities, and
+                saving or exporting application data.
+              </p>
+
+              <p class="learning">
+                <strong>Challenge & learning:</strong>
+                Troubleshooting the application modal and dashboard
+                styles taught me to test how HTML, CSS, and JavaScript
+                work together.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>localStorage</span>
+                <span>JSON</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://ymo206.github.io/internship-application-tracker/"
+                  target="_blank" rel="noopener noreferrer">
+                  Live demo ↗
+                </a>
+                <a href="https://github.com/ymo206/internship-application-tracker"
+                  target="_blank" rel="noopener noreferrer">
+                  GitHub ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alternate" id="skills">
+      <div class="container">
+        <p class="eyebrow">03 / SKILLS</p>
+        <h2>My technical toolkit.</h2>
+
+        <div class="skills-grid">
+          <div class="info-panel">
+            <h3>Languages</h3>
+            <div class="tags">
+              <span>Java</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <h3>Tools & Platforms</h3>
+            <div class="tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>IntelliJ IDEA</span>
+              <span>Maven</span>
+              <span>GitHub Pages</span>
+              <span>Claude Code</span>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <h3>Development Concepts</h3>
+            <div class="tags">
+              <span>Object-Oriented Programming</span>
+              <span>Data Structures</span>
+              <span>Algorithms</span>
+              <span>Responsive Design</span>
+              <span>Debugging</span>
+              <span>Version Control</span>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <h3>Relevant Coursework</h3>
+            <p>
+              Software Development, Data Structures,
+              Programming Practicum, Machine Organization,
+              and Computer Graphics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container section-grid">
+        <div>
+          <p class="eyebrow">04 / EXPERIENCE</p>
+          <h2>Experience that shaped my work.</h2>
+        </div>
+
+        <div class="experience-list">
+          <article>
+            <div class="experience-head">
+              <h3>Security Operations</h3>
+              <span>Professional Experience</span>
+            </div>
+            <p>
+              Worked in security roles that required attention to
+              detail, following established procedures, communicating
+              clearly, and responding responsibly to changing situations.
+            </p>
+          </article>
+
+          <article>
+            <div class="experience-head">
+              <h3>Airport Ramp Operations</h3>
+              <span>Professional Experience</span>
+            </div>
+            <p>
+              Worked in fast-paced airport operations, where teamwork,
+              safety procedures, and reliable communication were
+              important to completing daily responsibilities.
+            </p>
+          </article>
+
+          <article>
+            <div class="experience-head">
+              <h3>Software Projects & Coursework</h3>
+              <span>UW Tacoma</span>
+            </div>
+            <p>
+              Built and tested applications as part of computer science
+              coursework, managed code using GitHub, and improved
+              projects through debugging and feedback.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section alternate" id="resume">
+      <div class="container">
+        <div class="resume-panel">
+          <div>
+            <p class="eyebrow">05 / RESUME</p>
+            <h2>View my resume.</h2>
+
+            <p>
+              For more details about my education, work experience,
+              and technical skills, see my latest resume.
+            </p>
+
+            <p class="resume-status" id="resume-status" role="status">
+              Resume PDF will be available here once it is added
+              to this repository.
+            </p>
+          </div>
+
+          <a id="resume-link" class="btn primary"
+            href="resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            hidden>
+            Open resume PDF ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <p class="eyebrow">06 / CONTACT</p>
+        <h2>Let's connect.</h2>
+
+        <p>
+          I'm interested in software development opportunities,
+          internships, and connecting with others in tech.
+        </p>
+
+        <div class="action-row">
+          <a class="btn primary"
+            href="https://github.com/ymo206"
+            target="_blank"
+            rel="noopener noreferrer">
+            My GitHub ↗
+          </a>
+
+          <a class="btn secondary"
+            href="https://github.com/ymo206/tcss490-portfolio"
+            target="_blank"
+            rel="noopener noreferrer">
+            TCSS 490 Portfolio ↗
+          </a>
+        </div>
+
+        <p class="contact-note">
+          Professional email:
+          <strong>Add your preferred contact email before submitting.</strong>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>
+        © <span id="year">2026</span> Yusuf Mohamoud ·
+        University of Washington Tacoma
+      </span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
