@@ -1,25 +1,25 @@
 
-/* ==========================================
-   YUSUF MOHAMOUD - COMPUTER SCIENCE PORTFOLIO
-   Main Stylesheet
-   ========================================== */
+/* =========================================
+   YUSUF MOHAMOUD | PORTFOLIO
+   ========================================= */
 
 :root {
   --bg: #0a1324;
-  --bg-alt: #101d32;
-  --surface: #14233b;
-  --surface-light: #1a2d49;
-  --text: #ecf3ff;
-  --muted: #a6b5c9;
-  --accent: #66b7ff;
-  --accent-dark: #3295ed;
-  --border: #2a3c55;
-  --green: #79e4ad;
-  --purple: #c9a2ff;
-
-  --max-width: 1140px;
-  --radius: 14px;
+  --bg-alt: #101d30;
+  --surface: #15243b;
+  --surface-light: #1a2c47;
+  --text: #eef4ff;
+  --muted: #a8b7cc;
+  --accent: #69b9ff;
+  --accent-hover: #9bd1ff;
+  --border: #2a3d55;
+  --green: #87dfaf;
+  --purple: #c9a6ff;
+  --max-width: 1120px;
+  --radius: 12px;
 }
+
+/* GENERAL */
 
 * {
   box-sizing: border-box;
@@ -27,7 +27,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 85px;
 }
 
 body {
@@ -35,6 +35,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -50,20 +51,20 @@ button {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
 
 .container {
   width: min(90%, var(--max-width));
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .skip-link {
   position: absolute;
   top: -100px;
   left: 12px;
-  padding: 10px 18px;
+  padding: 10px 16px;
   background: var(--accent);
   color: var(--bg);
   z-index: 1000;
@@ -73,9 +74,7 @@ button:focus-visible {
   top: 12px;
 }
 
-/* ==========================================
-   NAVIGATION
-   ========================================== */
+/* NAVIGATION */
 
 .site-header {
   position: sticky;
@@ -83,11 +82,11 @@ button:focus-visible {
   z-index: 100;
   background: rgba(10, 19, 36, 0.96);
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(12px);
 }
 
 .nav {
-  min-height: 76px;
+  min-height: 74px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,7 +94,6 @@ button:focus-visible {
 }
 
 .logo {
-  color: var(--text);
   font-size: 1.6rem;
   font-weight: 800;
   letter-spacing: -1px;
@@ -108,17 +106,18 @@ button:focus-visible {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 27px;
 }
 
 .nav-links a {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus-visible {
   color: var(--accent);
 }
 
@@ -140,13 +139,11 @@ button:focus-visible {
 .menu-toggle span {
   width: 22px;
   height: 2px;
-  background: var(--text);
   border-radius: 2px;
+  background: var(--text);
 }
 
-/* ==========================================
-   TYPOGRAPHY
-   ========================================== */
+/* TYPOGRAPHY */
 
 h1,
 h2,
@@ -162,12 +159,12 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.8rem, 6vw, 5rem);
-  letter-spacing: -2.5px;
+  font-size: clamp(2.9rem, 6vw, 4.8rem);
+  letter-spacing: -2px;
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-size: clamp(2rem, 4vw, 2.7rem);
   letter-spacing: -1px;
 }
 
@@ -178,14 +175,13 @@ h3 {
 .eyebrow {
   margin-bottom: 18px;
   color: var(--accent);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  letter-spacing: 1.8px;
 }
 
 .section {
-  padding: 100px 0;
+  padding: 95px 0;
 }
 
 .alternate {
@@ -193,20 +189,17 @@ h3 {
 }
 
 .section-intro {
-  max-width: 670px;
-  margin-bottom: 38px;
+  max-width: 650px;
+  margin-bottom: 35px;
   color: var(--muted);
-  font-size: 1.03rem;
+  font-size: 1rem;
 }
 
-/* ==========================================
-   BUTTONS
-   ========================================== */
+/* BUTTONS */
 
 .action-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 14px;
   margin-top: 30px;
 }
@@ -216,16 +209,16 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 48px;
-  padding: 12px 22px;
+  min-height: 47px;
+  padding: 11px 21px;
   border: 1px solid transparent;
   border-radius: 8px;
+  font-size: 0.9rem;
   font-weight: 700;
-  font-size: 0.92rem;
   transition:
-    transform 0.2s ease,
     background 0.2s ease,
-    border-color 0.2s ease;
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .btn:hover {
@@ -238,36 +231,34 @@ h3 {
 }
 
 .btn.primary:hover {
-  background: #91cbff;
+  background: var(--accent-hover);
 }
 
 .btn.secondary {
+  color: var(--text);
   background: transparent;
   border-color: var(--border);
-  color: var(--text);
 }
 
 .btn.secondary:hover {
-  border-color: var(--accent);
   background: var(--surface);
+  border-color: var(--accent);
 }
 
-/* ==========================================
-   HERO SECTION
-   ========================================== */
+/* HERO */
 
 .hero {
-  min-height: 630px;
+  min-height: 610px;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
-  gap: 60px;
+  gap: 55px;
   padding-top: 100px;
-  padding-bottom: 110px;
+  padding-bottom: 105px;
 }
 
 .hero h1 {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .hero h1 span {
@@ -275,46 +266,44 @@ h3 {
 }
 
 .hero-lead {
-  max-width: 590px;
-  margin-bottom: 18px;
-  font-size: 1.35rem;
+  margin-bottom: 17px;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
 .hero-detail {
-  max-width: 570px;
+  max-width: 560px;
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: 1.03rem;
 }
 
 .hero-art {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .code-window {
   width: 100%;
-  max-width: 480px;
+  max-width: 460px;
   overflow: hidden;
-  border: 1px solid #34506f;
-  border-radius: var(--radius);
   background: #0e1a2c;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+  border: 1px solid #36506f;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.23);
 }
 
 .window-top {
-  height: 48px;
+  height: 46px;
   display: flex;
   align-items: center;
   gap: 7px;
-  padding: 0 18px;
+  padding: 0 17px;
   background: #172840;
   border-bottom: 1px solid var(--border);
 }
 
 .window-top i {
-  display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -333,13 +322,13 @@ h3 {
   margin-left: auto;
   color: var(--muted);
   font-family: monospace;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
 }
 
 .window-body {
-  padding: 30px 22px;
+  padding: 28px 20px;
   font-family: "Courier New", monospace;
-  font-size: clamp(0.75rem, 1.15vw, 0.9rem);
+  font-size: clamp(0.72rem, 1.1vw, 0.88rem);
   line-height: 1.9;
 }
 
@@ -364,37 +353,34 @@ h3 {
   color: var(--accent);
 }
 
-/* ==========================================
-   ABOUT SECTION
-   ========================================== */
+/* ABOUT */
 
 .section-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
-  gap: 75px;
+  gap: 70px;
 }
 
 .section-copy {
-  max-width: 690px;
+  max-width: 680px;
 }
 
 .section-copy p {
+  margin-bottom: 20px;
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: 1.04rem;
 }
 
 .section-copy p:last-child {
   margin-bottom: 0;
 }
 
-/* ==========================================
-   PROJECT CARDS
-   ========================================== */
+/* PROJECTS */
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 22px;
 }
 
 .project-card {
@@ -405,13 +391,13 @@ h3 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition:
-    transform 0.25s ease,
-    border-color 0.25s ease;
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--accent);
+  transform: translateY(-4px);
+  border-color: #518bc0;
 }
 
 .project-visual {
@@ -420,7 +406,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 35px 25px 20px;
+  padding: 38px 23px 22px;
   overflow: hidden;
 }
 
@@ -428,25 +414,25 @@ h3 {
   position: absolute;
   top: 15px;
   left: 18px;
-  font-size: 0.65rem;
+  color: #cfdef3;
+  font-size: 0.66rem;
   font-weight: 800;
-  letter-spacing: 1.3px;
-  color: #c5d9f6;
+  letter-spacing: 1.2px;
 }
 
 .visual-portfolio {
-  background: linear-gradient(135deg, #193c61, #0e2545);
+  background: linear-gradient(135deg, #193c61, #102743);
 }
 
 .visual-todo {
-  background: linear-gradient(135deg, #163f50, #102b40);
+  background: linear-gradient(135deg, #184558, #102b40);
 }
 
 .visual-tracker {
-  background: linear-gradient(135deg, #31315e, #152b4b);
+  background: linear-gradient(135deg, #30325d, #162a49);
 }
 
-/* Portfolio preview */
+/* PORTFOLIO PREVIEW */
 
 .mini-browser {
   width: 90%;
@@ -459,26 +445,25 @@ h3 {
   background: #101e32;
   border: 1px solid #426083;
   border-radius: 9px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 .mini-browser strong {
-  color: var(--text);
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .mini-bar {
-  height: 8px;
   width: 45px;
-  border-radius: 6px;
+  height: 8px;
   background: var(--accent);
+  border-radius: 5px;
 }
 
 .mini-line {
   display: block;
   width: 65%;
   height: 7px;
-  background: #3f5571;
+  background: #415976;
   border-radius: 10px;
 }
 
@@ -490,11 +475,11 @@ h3 {
   width: 70px;
   height: 17px;
   margin-top: 5px;
-  border-radius: 5px;
   background: var(--accent);
+  border-radius: 5px;
 }
 
-/* To-do list preview */
+/* TO DO PREVIEW */
 
 .mock-list {
   width: 90%;
@@ -503,7 +488,7 @@ h3 {
   background: #10283a;
   border: 1px solid #42687c;
   border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
 .mock-list strong {
@@ -537,7 +522,7 @@ h3 {
   border-color: var(--green);
 }
 
-/* Internship tracker preview */
+/* INTERNSHIP TRACKER PREVIEW */
 
 .mock-dashboard {
   width: 95%;
@@ -546,7 +531,7 @@ h3 {
   background: #131e3b;
   border: 1px solid #555c94;
   border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
 .mock-dashboard > strong {
@@ -573,16 +558,16 @@ h3 {
 }
 
 .mock-stats small {
+  color: var(--muted);
   font-size: 0.55rem;
   font-weight: 400;
-  color: var(--muted);
 }
 
 .mock-dashboard .mini-line {
   margin-top: 9px;
 }
 
-/* Project card content */
+/* PROJECT DETAILS */
 
 .project-body {
   display: flex;
@@ -626,10 +611,9 @@ h3 {
 }
 
 .tags span {
-  display: inline-block;
   padding: 5px 10px;
-  background: rgba(102, 183, 255, 0.1);
-  border: 1px solid rgba(102, 183, 255, 0.2);
+  background: rgba(105, 185, 255, 0.09);
+  border: 1px solid rgba(105, 185, 255, 0.19);
   border-radius: 6px;
   color: #bddfff;
   font-size: 0.75rem;
@@ -641,7 +625,7 @@ h3 {
   flex-wrap: wrap;
   gap: 18px;
   margin-top: auto;
-  padding-top: 24px;
+  padding-top: 23px;
 }
 
 .project-links a {
@@ -654,9 +638,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* ==========================================
-   SKILLS
-   ========================================== */
+/* SKILLS */
 
 .skills-grid {
   display: grid;
@@ -666,7 +648,7 @@ h3 {
 }
 
 .info-panel {
-  padding: 28px;
+  padding: 27px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -677,13 +659,11 @@ h3 {
 }
 
 .info-panel p {
-  color: var(--muted);
   margin-bottom: 0;
+  color: var(--muted);
 }
 
-/* ==========================================
-   EXPERIENCE
-   ========================================== */
+/* EXPERIENCE */
 
 .experience-list {
   display: flex;
@@ -691,8 +671,8 @@ h3 {
 }
 
 .experience-list article {
-  padding: 0 0 26px;
   margin-bottom: 28px;
+  padding-bottom: 27px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -707,7 +687,7 @@ h3 {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .experience-head h3 {
@@ -720,20 +700,22 @@ h3 {
 }
 
 .experience-list p {
-  margin-bottom: 0;
+  margin-bottom: 12px;
   color: var(--muted);
 }
 
-/* ==========================================
-   RESUME
-   ========================================== */
+.experience-list p:last-child {
+  margin-bottom: 0;
+}
+
+/* RESUME */
 
 .resume-panel {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 35px;
-  padding: 40px;
+  padding: 38px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -744,7 +726,7 @@ h3 {
 }
 
 .resume-panel p {
-  max-width: 680px;
+  max-width: 650px;
   color: var(--muted);
 }
 
@@ -757,22 +739,18 @@ h3 {
   font-size: 0.9rem;
 }
 
-/* Hide missing PDF link */
-
 [hidden] {
   display: none !important;
 }
 
-/* ==========================================
-   CONTACT
-   ========================================== */
+/* CONTACT */
 
 .contact-section {
   text-align: center;
 }
 
 .contact-section h2 {
-  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
 }
 
 .contact-section > .container > p:not(.eyebrow) {
@@ -794,14 +772,12 @@ h3 {
   color: var(--text);
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
+/* FOOTER */
 
 .site-footer {
-  padding: 28px 0;
-  border-top: 1px solid var(--border);
+  padding: 27px 0;
   background: #08101e;
+  border-top: 1px solid var(--border);
 }
 
 .footer-inner {
@@ -821,9 +797,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* ==========================================
-   TABLET LAYOUT
-   ========================================== */
+/* TABLETS */
 
 @media (max-width: 1050px) {
   .hero {
@@ -840,9 +814,7 @@ h3 {
   }
 }
 
-/* ==========================================
-   MOBILE LAYOUT
-   ========================================== */
+/* MOBILE */
 
 @media (max-width: 760px) {
   html {
@@ -923,7 +895,7 @@ h3 {
   }
 
   .project-visual {
-    min-height: 250px;
+    min-height: 245px;
   }
 
   .skills-grid {
@@ -942,9 +914,7 @@ h3 {
   }
 }
 
-/* ==========================================
-   SMALL MOBILE PHONES
-   ========================================== */
+/* SMALL PHONES */
 
 @media (max-width: 400px) {
   .hero h1 {
@@ -977,9 +947,7 @@ h3 {
   }
 }
 
-/* ==========================================
-   ACCESSIBILITY
-   ========================================== */
+/* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
   html {
