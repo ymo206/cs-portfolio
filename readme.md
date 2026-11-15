@@ -112,9 +112,9 @@ My resume will be available through the portfolio website.
 
 ## Contact
 
-**GitHub:** https://github.com/ymo206
+**Email:** yusufosmanmohamoud@gmail.com
 
-**Professional Email:** To be added before final submission.
+**GitHub:** https://github.com/ymo206
 
 ## Website Information
 
